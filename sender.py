@@ -80,7 +80,7 @@ def send():
 
 	send_snap = input('Send snap? (y/n) ')
 	
-	if send_snap == "y":
+	if send_snap.lower == "y":
 		# Press send button
 		device.shell('input touchscreen tap 995 2200 50')
 		print('snap sent.')
